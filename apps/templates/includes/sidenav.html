@@ -1,0 +1,158 @@
+<nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+  <div class="scrollbar-inner">
+    <!-- Brand -->
+    <div class="sidenav-header  align-items-center">
+      <a class="navbar-brand" href="/">
+        <img src="/apps/static/img/brand/color.png" class="navbar-brand-img" alt="EmpatBulan - Logo.">
+      </a>
+    </div>
+    <div class="navbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Nav items -->
+        <ul class="navbar-nav">
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link {% if 'index' in segment %} active {% endif %}" href="/">-->
+<!--              <i class="ni ni-tv-2 text-primary"></i>-->
+<!--              <span class="nav-link-text mt-2">Dashboard</span>-->
+<!--            </a>-->
+<!--          </li>-->
+          <li class="nav-item">
+            <a class="nav-link {% if 'order' in segment %} active {% endif %}" href="{% url 'profile' %}">
+              <i class="ni ni-single-copy-04 text-primary"></i>
+              <span class="nav-link-text mt-2">Order Layanan</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'class' in segment %} active {% endif %}" href="/map.html">
+              <i class="ni ni-hat-3 text-primary"></i>
+              <span class="nav-link-text mt-2">Kelas</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'article' in segment %} active {% endif %}" href="{% url 'icon' %}">
+              <i class="ni ni-align-left-2 text-primary"></i>
+              <span class="nav-link-text mt-2">Artikel</span>
+            </a>
+          </li>
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link {% if 'tables' in segment %} active {% endif %}" href="{% url 'tables' %}">-->
+<!--              <i class="ni ni-bullet-list-67 text-default"></i>-->
+<!--              <span class="nav-link-text">Tables</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="/login.html">-->
+<!--              <i class="ni ni-key-25 text-info"></i>-->
+<!--              <span class="nav-link-text">Login (template)</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="/register.html">-->
+<!--              <i class="ni ni-circle-08 text-pink"></i>-->
+<!--              <span class="nav-link-text">Register (template)</span>-->
+<!--            </a>-->
+<!--          </li>-->
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">
+              <i class="ni ni-curved-next text-primary"></i>
+              <span class="nav-link-text mt-2">Logout</span>
+            </a>
+          </li>            
+        </ul>
+        <!-- Divider -->
+        <hr class="my-3">
+        <!-- Heading -->
+        <h6 class="navbar-heading p-0 text-muted">
+          <span class="docs-normal">Pengaturan</span>
+        </h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-5">
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'timeline' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-time-alarm text-primary"></i>
+              <span class="nav-link-text mt-2">Timeline</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'zscore' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-sound-wave text-primary"></i>
+              <span class="nav-link-text mt-2">Z-Score</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'privacy' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-book-bookmark text-primary"></i>
+              <span class="nav-link-text mt-2">Kebijakan Privasi</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'rules' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-single-02 text-primary"></i>
+              <span class="nav-link-text mt-2">Aturan Penggunaan</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'about' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-mobile-button text-primary"></i>
+              <span class="nav-link-text mt-2">About</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'report' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-bullet-list-67 text-primary"></i>
+              <span class="nav-link-text mt-2">Jenis Laporan</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'hero' in segment %} active {% endif %}"
+               href="{% url 'hero-index' %}">
+              <i class="ni ni-image text-primary"></i>
+              <span class="nav-link-text mt-2">Hero</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link {% if 'onboarding' in segment %} active {% endif %}"
+               href="">
+              <i class="ni ni-album-2 text-primary"></i>
+              <span class="nav-link-text mt-2">Onboarding</span>
+            </a>
+          </li>
+
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" -->
+<!--               target="_blank" -->
+<!--               href="https://appseed.us/admin-dashboards/django-dashboard-argon-pro">-->
+<!--              <i class="ni ni-spaceship text-red"></i>-->
+<!--              <span class="nav-link-text text-red">PRO Version</span>-->
+<!--            </a>-->
+<!--          </li>-->
+
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active active-pro" -->
+<!--               target="_blank" -->
+<!--               href="http://appseed.us">-->
+<!--              <i class="ni ni-send text-dark"></i>-->
+<!--              <span class="nav-link-text">AppSeed</span>-->
+<!--            </a>-->
+<!--          </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
